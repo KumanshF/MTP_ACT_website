@@ -1,3 +1,4 @@
+/*----SET height OF DIV---*/
 $(document).ready(function() {
   function setHeight() {
     windowHeight = $(window).innerHeight();
@@ -8,9 +9,12 @@ $(document).ready(function() {
   $(window).resize(function() {
     setHeight();
   });
+
+  $('#main-content').load(MTP_ACT.html+'#content')
+
 });
 
-
+/*--------NAV TOGGLE COLLAPSE ON LOSING FOCUS--*/
 $(function (){
 	$("#navbarToggle").blur(function (event){
 		var screenWidth = window.innerWidth;
@@ -18,8 +22,14 @@ $(function (){
 			$("#bs-example-navbar-collapse-1").collapse('hide');
 		}
 	});
+    $("#navbarToggle").click(function (event) {
+    $(event.target).focus();
+  });
 });
-
+/*---------LOADING CONTENT INTO DIV #MAIN-CONTENT-------*/
+$(document).ready(function() {
+  $('#main-content').load('mtpAct.html');
+})
 $('nav a').on('click', function(e){
 	e.preventDefault();
 	var url=this.href;
@@ -32,7 +42,7 @@ $("nav a").on("click", function(){
    $(this).parent().addClass("active");
 });
 
-
+/*-------------SCROLL DOWN BUTTON---------*/
 $("#scrollDown").click(function() {
     windowWidth=$(window).innerWidth();
     if (windowWidth>768) {
@@ -46,3 +56,7 @@ $("#scrollDown").click(function() {
         'slow');
     }
 });
+
+
+
+
