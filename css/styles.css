@@ -13,10 +13,12 @@ body{
 	background-color: gray;
 }
 #section1-content{
-	padding-top: 25%;
-	padding-bottom: 15%;
-	width:100%;
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-top: 20%;
+	width:85%;
 	align-self: center;
+
 }
 
 #section1-content h1{
@@ -66,7 +68,7 @@ font-size: 2.3em;
 	padding-bottom: 20px;
 }
 
-#viewFirst{
+.viewFirst{
 	@include box-sizing(border-box);
 }
 .scrollSec{
@@ -96,5 +98,10 @@ font-size: 2.3em;
 	color: white;
 }
 #content{
-	min-height:500px;
+	min-height: 600px;
+}
+.Joinusform{
+	height: auto;
+	overflow: visible;
+
 }
