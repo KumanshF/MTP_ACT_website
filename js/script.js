@@ -1,3 +1,4 @@
+
 /*----SET height OF DIV---*/
 $(document).ready(function() {
   function setHeight() {
@@ -11,37 +12,69 @@ $(document).ready(function() {
     setHeight();
   });
 
- $('#main-content').load(MTP_ACT.html+'#content')
-
 });
 
 /*--------NAV TOGGLE COLLAPSE ON LOSING FOCUS--*/
-$(function (){
-	$("#navbarToggle").blur(function (event){
+/*$(function (){
+	$(".forTouch").blur(function (event){
 		var screenWidth = window.innerWidth;
-		if (screenWidth < 768){
+    if (screenWidth < 768){
 			$("#bs-example-navbar-collapse-1").collapse('hide');
 		}
+
 	});
     $("#navbarToggle").click(function (event) {
     $(event.target).focus();
   });
 });
+*/
+/*---------LOADING CONTENT INTO DIV #MAIN-CONTENT AND DROPDOWN MENU HOVER FUNC--------*/
 
-/*---------LOADING CONTENT INTO DIV #MAIN-CONTENT-------*/
 $(document).ready(function() {
   $('#main-content').load('mtpAct.html');
-})
-$('nav a').on('click', function(e){
-	e.preventDefault();
-	var url=this.href;
-	$('#main-content').load(url+'#content').hide().fadeIn('slow');
-	});
+  windowWidth=$(window).innerWidth();
 
+  if (windowWidth<768) {
+    $('.forTouch').on('click', function(e){
+       e.preventDefault();
+       var url=this.href;
+       $('#main-content').load(url+'#content').hide().fadeIn('slow');
+     });
 
-$("nav a").on("click", function(){
-	$('nav li.active').removeClass('active');
-   $(this).parent().addClass("active");
+    $("nav a").on("click", function(){
+      $('nav li.active').removeClass('active');
+      $(this).parent().addClass("active");
+    });
+  }
+
+  if (windowWidth>768) {
+    $('.secTouch').on('click', function(e){
+       e.preventDefault();
+       var url=this.href;
+       $('#main-content').load(url+'#content').hide().fadeIn('slow');
+     });
+
+    $("nav a").on("click", function(){
+      $('nav li.active').removeClass('active');
+      $(this).parent().addClass("active");
+    });  
+
+  $(function(){
+     
+      $(".dropdown").hover(            
+        function() {
+          $('.dropdown-menu', this).stop( true, true ).fadeIn("fast");
+          $(this).toggleClass('open');
+          $('span', this).toggleClass("caret caret-up");                
+    },
+      function() {
+          $('.dropdown-menu', this).stop( true, true ).fadeOut("fast");
+          $(this).toggleClass('open');
+          $('span', this).toggleClass("caret caret-up");                
+      });
+    });
+  }
+
 });
 
 /*-------------SCROLL DOWN BUTTON---------*/
@@ -59,6 +92,8 @@ $("#scrollDown").click(function() {
     }
 });
 
+ 
+    
 /*---------------ajax-utils dynamic load-------*/
 /*
 (function (global) {
@@ -99,5 +134,3 @@ global.$dc = dc;
 
 })(window);
 */
-
-

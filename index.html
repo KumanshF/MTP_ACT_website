@@ -7,6 +7,7 @@
   <title>AmendTheMtpAct</title>
   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+
 </head>
 
 <!--MAIN BODY-->
@@ -38,7 +39,7 @@
             <nav class="navbar navbar-default">
               <div class="container-fluid">
                 <div class="navbar-header">
-                  <button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <button id="navbarToggle" type="button" class="navbar-toggle collapsed forTouch" data-toggle="collapse"  data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -47,11 +48,21 @@
                 </div>
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                   <ul  id="custom-nav" class="nav navbar-nav">
-                    <li class="active"><a href="mtpAct.html">MTP ACT</a></li>
-                      <li><a href="MTP_ACT.html">History</a></li>
-                      <li><a href="ForDoctors.html">For Doctors</a></li>
-                      <li><a href="ForPatients.html">For Patients</a></li>
-                      <li><a href="JoinUs.html">JOIN US</a></li>
+                    <li class="active"><a class="forTouch secTouch" href="mtpAct.html">MTP ACT</a></li>
+                      <li><a class="forTouch secTouch" href="MTP_ACT.html">Problems</a></li>
+                      
+                      <li class="dropdown">
+                        <a href="/" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Petitions <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                          <li><a class="forTouch secTouch" href="petition1.html">Petition 1</a></li>
+                          <li><a class="forTouch secTouch" href="#">Petition 2</a></li>
+                          <li><a class="forTouch secTouch" href="#">Petition 3</a></li>
+                        </ul>
+                      </li>
+                      
+              
+                      <li><a class="forTouch secTouch" href="ForDoctors.html">For Doctors</a></li>
+                      <li><a class="forTouch secTouch" href="ForPatients.html">For Patients</a></li>
                   </ul>
                 </div>
               </div>
@@ -60,13 +71,37 @@
 
        
         <!--SECTION3-->
-         <section id="content" class="container section"> 
+         <section id="content" class="container"> 
           <div id="main-content">
          
           </div>
          </section>
-        <!--SECTION4-->
 
+
+        <!--SECTION4-->
+        <footer class="panel-footer">
+          <div class="container">
+            <div class="row">
+            <section id="personalData" class="col-md-4">
+                FOR MORE DETAILS<br>
+                EMAIL : Avengers@gmail.com
+                <hr >
+                <div>
+                  &copy; Copyright Patient Safety Alliance 2016
+                </div>
+                
+              </section>
+              
+              <section id="commentSec" class="col-md-8">
+                <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
+                <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
+                <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%24Act2VG%2Ft%2FL0z80BoF2V6F."+"&opts=16862&num=10&ts=1472131954915");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
+              </section>
+              
+              
+            </div>
+          </div>
+        </footer>
 
       </div>
     </article>
