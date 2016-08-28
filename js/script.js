@@ -47,7 +47,7 @@ $(document).ready(function() {
     });
   }
 
-  if (windowWidth>768) {
+  if (windowWidth>769) {
     $('.secTouch').on('click', function(e){
        e.preventDefault();
        var url=this.href;
