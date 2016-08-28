@@ -8,10 +8,13 @@ $(document).ready(function() {
   	};}
   setHeight();
   
-  $(window).resize(function() {
-    setHeight();
-  });
+  windowWidth=$(window).innerWidth();
 
+  if (windowWidth>426) {
+    $(window).resize(function() {
+      setHeight();
+    });
+  }
 });
 
 /*--------NAV TOGGLE COLLAPSE ON LOSING FOCUS--*/
