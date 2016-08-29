@@ -17,11 +17,12 @@ body{
 	padding-bottom: 5%;
 	padding-left: 5%;
 	padding-top: 20%;
-	width:70%;
+	width:85%;
 	align-self: center;
 	position: absolute;
 	bottom: 25%;
 	left: 5%;
+	line-height: 1.2em;
 }
 #lineU{
 	width: 55%;
@@ -111,7 +112,7 @@ font-size: 1.3em;
 	font-family: oswald;
 	line-height: 1.8em;
 	font-style: normal;
-font-variant: normal;
+	font-variant: normal;
 }
 
 #main-content h4{
