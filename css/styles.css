@@ -84,16 +84,16 @@ font-size: 1.3em;
 }
 @media (min-width: 1415px) {
 .navbar-nav>li {
-   	margin-right: 4%;
-	margin-left: 4%;
-	width: 16%;
+   	margin-right: 3%;
+	margin-left: 3%;
+	width: 18%;
 }
 }
 @media (max-width: 1415px) {
 .navbar-nav>li {
-   margin-right: 2%;
-	margin-left: 2%;
-	width: 20%;
+   margin-right: 1%;
+	margin-left: 1%;
+	width: 22%;
 }
 }
 
