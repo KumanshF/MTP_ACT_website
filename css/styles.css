@@ -3,7 +3,6 @@ body{
 	box-sizing: border-box;
 }
 #section1{
-	background:url("../images/home page image.svg") no-repeat;
 	background-size:cover;
 	position: relative;
 	display: block;
@@ -12,7 +11,12 @@ body{
 	min-height: 768px;
 	background-color: gray;
 }
-
+.origback{
+	background:url("../images/home page image.svg") no-repeat;
+}
+.newback{
+	background:url("../images/test.svg") no-repeat;
+}
 #section1-content{
 	padding-bottom: 5%;
 	padding-left: 5%;
@@ -20,9 +24,9 @@ body{
 	width:85%;
 	align-self: center;
 	position: absolute;
-	bottom: 25%;
+	bottom: 22%;
 	left: 5%;
-	line-height: 1.2em;
+	height: auto;
 }
 #lineU{
 	width: 55%;
@@ -37,6 +41,13 @@ body{
 	font-variant: normal;
 	font-weight: 500;
 	line-height: 26.4px;
+	line-height: 1.2em;
+}
+#logo{
+	height: 250px;
+	width: 250px;
+	opacity: 0.4;
+	margin-left: -50px;
 
 }
 

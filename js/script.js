@@ -31,6 +31,23 @@ $(document).ready(function() {
   });
 });
 */
+/*---------different background---------------------------*/
+$(document).ready(function (){
+  
+  windowWidth=$(window).innerWidth();
+  
+  if (windowWidth<700) {
+    $("#section1").removeClass('origback');
+    $("#section1").addClass('newback');
+    var img = $('<img />', { 
+            id: 'logo',
+            src: 'images/mtp1.png',
+          });
+    img.prependTo($('#section1-content'));
+  };
+});
+
+
 /*---------LOADING CONTENT INTO DIV #MAIN-CONTENT AND DROPDOWN MENU HOVER FUNC--------*/
 
 $(document).ready(function() {
