@@ -3,7 +3,7 @@ body{
 	box-sizing: border-box;
 }
 #section1{
-	background:url("../images/home page image 1.svg") no-repeat;
+	background:url("../images/home page image.svg") no-repeat;
 	background-size:cover;
 	position: relative;
 	display: block;
