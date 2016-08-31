@@ -208,6 +208,9 @@ box-shadow: 3px -6px 35px 1px rgba(133,126,133,0.53);
 .row{
 	margin: 0px;
 }
+
 #personalData{
 	padding-top: 15px;
+	font-family: Ubuntu, sans-serif;
+	font-size: 16px;
 }
