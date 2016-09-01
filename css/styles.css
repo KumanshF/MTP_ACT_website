@@ -83,16 +83,16 @@ font-size: 1.3em;
 }
 @media (min-width: 1415px) {
 .navbar-nav>li {
-   	margin-right: 3%;
-	margin-left: 3%;
-	width: 18%;
+   	margin-right: 2%;
+	margin-left: 2%;
+	width: 20%;
 }
 }
 @media (max-width: 1415px) {
 .navbar-nav>li {
-   margin-right: 1%;
-	margin-left: 1%;
-	width: 22%;
+   margin-right: 0.5%;
+	margin-left: 0.5%;
+	width: 24%;
 	font-size: 0.9em;
 }
 }
@@ -103,6 +103,9 @@ font-size: 1.3em;
 	margin-left: 0;
 	width: 25%;
 	font-size: 0.8em;
+}
+#custom-nav{
+	width: 100%;
 }
 }
 @media (max-width: 880px) {
