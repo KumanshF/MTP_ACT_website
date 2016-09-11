@@ -1,0 +1,107 @@
+@import compass
+body{
+	box-sizing: border-box;
+}
+#section1{
+	background:url('') no-repeat;
+	background-size: cover;
+	position: relative;
+	display: flex;
+	background-position: center center;
+	vertical-align: baseline;
+	min-height: 768px;
+	background-color: gray;
+}
+#section1-content{
+	padding-bottom: 5%;
+	padding-left: 5%;
+	padding-top: 20%;
+	width:85%;
+	align-self: center;
+
+}
+
+#section1-content h1{
+font-size: 3em;
+}
+
+#section1-content h2{
+font-size: 2.3em;
+}
+.section{
+	width: 80%;
+}
+
+.nav{
+	font-size: 1.3em;
+}
+#custom-nav{
+	clear: both;
+	text-align: center;
+	float: none;
+	width: 80%;
+	margin-left:auto;
+	margin-right: auto;
+	
+}
+.navbar-nav>li {
+	margin-left:10%;
+	margin-right: auto;
+	
+}
+
+@media (max-width: 1460px){
+.navbar-nav>li {
+    margin-left:5%;
+}
+}
+@media (max-width: 990px){
+.navbar-nav>li {
+    margin-left:auto;
+}
+}
+
+#main-content{
+	margin: auto;
+	font-size: 1.2em;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
+.viewFirst{
+	@include box-sizing(border-box);
+}
+.scrollSec{
+	position: absolute;
+    z-index: 3;
+    bottom: 0;
+    width: 100%;
+    min-height: 30px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+#custom-btn{
+	background-color: transparent;
+	border: 2px solid white;
+	height: 45px;
+	width: 45px;
+	border-radius: 22.5px;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+
+.glyphicon{
+	font-size: 20px;
+	color: white;
+}
+#content{
+	min-height: 600px;
+}
+.Joinusform{
+	height: auto;
+	overflow: visible;
+
+}
